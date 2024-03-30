@@ -4,14 +4,12 @@ import { FaEdit } from "react-icons/fa";
 import { FaExpand } from "react-icons/fa";
 import comment from "../assets/comment.svg";
 
-const Card = () => {
+const Card = ({ todo }) => {
   return (
     <div className="w-72 h-80 rounded-[30px] bg-zinc-700 text-white px-5 py-6 relative overflow-hidden">
       <RiTodoLine size={36} />
 
-      <p className="text-md leading-tight mt-5 font-semibold">
-        Lorem ipsum dolor sit, amet conser adipisicing.
-      </p>
+      <p className="text-3xl leading-tight mt-5 font-semibold">{todo.todo}</p>
 
       <div className="footer absolute bottom-0 left-0  w-full h-16 flex justify-around">
         <div>
@@ -28,6 +26,6 @@ const Card = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Card

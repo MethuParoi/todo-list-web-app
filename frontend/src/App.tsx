@@ -9,7 +9,7 @@ import Protected from "./components/Protected";
 
 function App() {
   return (
-    <div className="w-full h-screen bg-zinc-900">
+    <div className="w-full min-h-[100vh] h-auto bg-zinc-900">
       <RecoilRoot>
         <BrowserRouter>
           <Routes>
