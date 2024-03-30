@@ -29,3 +29,16 @@ export const sourceAtom = atom({
   key: "sourceAtom",
   default: "http://localhost:3000",
 });
+
+type TodoType = {
+  userId: number;
+  todo: string;
+  isCompleted: boolean;
+};
+
+export const todoAtom = atom<TodoType[]>({
+  key: "todoAtom",
+  default: [],
+});
+
+

@@ -77,6 +77,7 @@ const Signup = () => {
                   if (response.status === 200) {
                     // const userName = response.data.username;
                     localStorage.setItem("token", response.data.token);
+                    localStorage.setItem("userId", response.data.userId);
                     // setUsername(userName);
                     navigate("/home");
                   }
